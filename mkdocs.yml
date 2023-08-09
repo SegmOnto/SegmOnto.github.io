@@ -1,0 +1,89 @@
+edit_uri: ''
+extra:
+  social:
+  - icon: fontawesome/brands/github-alt
+    link: https://github.com/SegmOnto/
+  - icon: fontawesome/solid/globe
+    link: https://SegmOnto.github.io
+extra_css: null
+markdown_extensions:
+- pymdownx.smartsymbols
+- pymdownx.mark
+- markdown.extensions.attr_list
+- pymdownx.superfences
+- pymdownx.details
+- pymdownx.tabbed
+- pymdownx.details
+- pymdownx.escapeall
+- pymdownx.smartsymbols
+- pymdownx.snippets
+- toc:
+    permalink: true
+- codehilite:
+    linenums: true
+- meta
+- footnotes
+- admonition
+nav:
+- Project Home: index.md
+- Project:
+  - The idea: pj/idea.md
+  - The vocabulary: pj/vocabulary.md
+  - The team: pj/team.md
+- Production pipeline:
+  - Pipeline: pp/pipeline.md
+  - ALTO: pp/alto.md
+  - TEI: pp/TEI.md
+  - RDF: pp/RDF.md
+  - IIIF: pp/IIIF.md
+- Guidelines:
+  - Zones:
+    - CustomZone: gd/gdZ/CustomZone.md
+    - DamageZone: gd/gdZ/DamageZone.md
+    - DigitizationArtefactZone: gd/gdZ/DigitizationArtefactZone.md
+    - DropCapitalZone: gd/gdZ/DropCapitalZone.md
+    - GraphicZone: gd/gdZ/GraphicZone.md
+    - MainZone: gd/gdZ/MainZone.md
+    - MarginTextZone: gd/gdZ/MarginTextZone.md
+    - MusicZone: gd/gdZ/MusicZone.md
+    - NumberingZone: gd/gdZ/NumberingZone.md
+    - QuireMarksZone: gd/gdZ/QuireMarksZone.md
+    - RunningTitleZone: gd/gdZ/RunningTitleZone.md
+    - SealZone: gd/gdZ/SealZone.md
+    - StampZone: gd/gdZ/StampZone.md
+    - TableZone: gd/gdZ/TableZone.md
+    - TitlePageZone: gd/gdZ/TitlePageZone.md
+  - Lines:
+    - CustomLine: gd/gdL/CustomLine.md
+    - DefaultLine: gd/gdL/DefaultLine.md
+    - DropCapitalLine: gd/gdL/DropCapitalLine.md
+    - HeadingLine: gd/gdL/HeadingLine.md
+    - InterlinearLine: gd/gdL/InterlinearLine.md
+    - MusicLine: gd/gdL/MusicLine.md
+  - Syntax: gd/syntax.md
+plugins:
+- search:
+    lang:
+    - en
+    - fr
+    - it
+    - de
+    separator: '[\s\-\.]+'
+repo_name: SegmOnto Home
+repo_url: http://segmonto.github.io/
+site_description: SegmOnto Documentation
+site_name: SegmOnto Documentation
+theme:
+  favicon: assets/icons/s.png
+  features:
+  - navigation.instant
+  font:
+    code: IBM Plex Mono
+    text: Source Sans Pro
+  icon:
+    repo: fontawesome/solid/globe
+  logo: assets/icons/s.png
+  name: material
+  palette:
+    primary: white
+use_directory_urls: true
