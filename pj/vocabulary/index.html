@@ -936,30 +936,30 @@
 <h1 id="vocabulary">Vocabulary<a class="headerlink" href="#vocabulary" title="Permanent link">&para;</a></h1>
 <p>SegmOnto is not the first attempt to offer a description of a page. Because of the nature of the task, two different academic traditions have offered vocabularies that serve as a base:</p>
 <ul>
-<li>Computer vision, especially via the PAGE XML scheme, proposes a limited system adapted to the needs of computer scientists.</li>
-<li>Codicology, whose purpose precisely is the description of the old documents, offers a much more precise vocabulary to answer the needs of philologists.</li>
+<li>Computer vision proposes a limited system adapted to the needs of computer scientists (cf. <a href="#page"><em>Page XML</em></a>).</li>
+<li>Codicology, whose purpose precisely is the description of the old documents, offers a much more precise vocabulary to answer the needs of philologists  (cf. <a href="#codicologia"><em>Codicologia</em></a>).</li>
 </ul>
 <p>On the one hand, codicological vocabularies do not take into account the requirements of computer-based solutions (such as a system of private zones or the articulation of types and subtypes) and usually does not address contemporary cases. On the other hand, the solution offered by computer scientists is too poor and is incapable to offer a satisfactory description of a page taken from an historical document. For all these reasons, SegmOnto offers a middle way, in between these two.</p>
 <h2 id="page">Page<a class="headerlink" href="#page" title="Permanent link">&para;</a></h2>
-<p>PAGE XML (cf. <em>infra</em>) offers a simple, short and generalist scheme to describe the page, with only fourteen categories:</p>
+<p>PAGE XML (cf. <em>infra</em>) offers a simple, short and generalist scheme to describe the page, with only fourteen categories (<a href="https://www.primaresearch.org/schema/PAGE/gts/pagecontent/2016-07-15/pagecontent.xsd">lien</a>):</p>
 <ul>
-<li><code>TextRegionType</code>. Pure text is represented as a text region. This includes drop capitals, but practically ornate text may be considered as a graphic.</li>
-<li><code>ImageRegionType</code>. An image is considered to be more intricate and complex than a graphic. These can be photos or drawings.</li>
-<li><code>LineDrawingRegionType</code>. A line drawing is a single colour illustration without solid areas.</li>
-<li><code>GraphicRegionType</code>. Regions containing simple graphics, such as a company logo, should be marked as graphic regions.</li>
-<li><code>TableRegionType</code>. Tabular data in any form is represented with a table region. Rows and columns may or may not have separator lines; these lines are not separator regions.</li>
-<li><code>ChartRegionType</code>. Regions containing charts or graphs of any type, should be marked as chart regions.</li>
-<li><code>SeparatorRegionType</code>. Separators are lines that lie between columns and paragraphs and can be used to logically separate different articles from each other.</li>
-<li><code>MathsRegionType</code>. Regions containing equations and mathematical symbols should be marked as maths regions.</li>
-<li><code>ChemRegionType</code>. Regions containing chemical formulas.</li>
-<li><code>MusicRegionType</code>. Regions containing musical notations.</li>
-<li><code>AdvertRegionType</code>. Regions containing advertisements.</li>
-<li><code>NoiseRegionType</code>. Noise regions are regions where no real data lies, only false data created by artifacts on the document or scanner noise.</li>
-<li><code>UnknownRegionType</code>. To be used if the region type cannot be ascertained.</li>
-<li><code>CustomRegionType</code>. Regions containing content that is not covered by the default types (text, graphic, image, line drawing, chart, table, separator, maths, map, music, chem, advert, noise, unknown).</li>
+<li><code>TextRegion</code> type. Pure text is represented as a text region. This includes drop capitals, but practically ornate text may be considered as a graphic.</li>
+<li><code>ImageRegion</code> type. An image is considered to be more intricate and complex than a graphic. These can be photos or drawings.</li>
+<li><code>LineDrawingRegion</code> type. A line drawing is a single colour illustration without solid areas.</li>
+<li><code>GraphicRegion</code> type. Regions containing simple graphics, such as a company logo, should be marked as graphic regions.</li>
+<li><code>TableRegion</code> type. Tabular data in any form is represented with a table region. Rows and columns may or may not have separator lines; these lines are not separator regions.</li>
+<li><code>ChartRegion</code> type. Regions containing charts or graphs of any type, should be marked as chart regions.</li>
+<li><code>SeparatorRegion</code> type. Separators are lines that lie between columns and paragraphs and can be used to logically separate different articles from each other.</li>
+<li><code>MathsRegion</code> type. Regions containing equations and mathematical symbols should be marked as maths regions.</li>
+<li><code>ChemRegion</code> type. Regions containing chemical formulas.</li>
+<li><code>MusicRegion</code> type. Regions containing musical notations.</li>
+<li><code>AdvertRegion</code> type. Regions containing advertisements.</li>
+<li><code>NoiseRegion</code> type. Noise regions are regions where no real data lies, only false data created by artifacts on the document or scanner noise.</li>
+<li><code>UnknownRegion</code> type. To be used if the region type cannot be ascertained.</li>
+<li><code>CustomRegion</code> type. Regions containing content that is not covered by the default types (text, graphic, image, line drawing, chart, table, separator, maths, map, music, chem, advert, noise, unknown).</li>
 </ul>
 <h2 id="codicologia"><em>Codicologia</em><a class="headerlink" href="#codicologia" title="Permanent link">&para;</a></h2>
-<p>Other vocabularies, designed by philologist specialised in codicology, offer an interesting alternative to those designed by computer scientists. Under the supervision of the IRHT in Paris, several glossaries have been gathered in an online application called Codicologia. It offers an extensive vocabulary in French, most of the time with English, German, Italian, Spanish and Arabic translations, with precise definitions adapted to the need of academics specialised in the humanities. Thanks to Georg Vogeler, a digital version is also available as a SKOS model, perfectly suited for digital purposes.</p>
+<p>Other vocabularies, designed by philologist specialised in codicology, offer an interesting alternative to those designed by computer scientists. Under the supervision of the IRHT in Paris, several glossaries have been gathered in an online application called <a href="http://codicologia.irht.cnrs.fr"><em>Codicologia</em></a>. It offers an extensive vocabulary in French, most of the time with English, German, Italian, Spanish and Arabic translations, with precise definitions adapted to the need of academics specialised in the humanities. Thanks to Georg Vogeler, <a href="https://gams.uni-graz.at/archive/objects/o:cord.auth/methods/sdef:SKOS/get">a digital version is also available as a SKOS model</a>, perfectly suited for digital purposes.</p>
 <h2 id="towards-a-middle-way">Towards a middle way<a class="headerlink" href="#towards-a-middle-way" title="Permanent link">&para;</a></h2>
 <p>Because PAGE offers too general a description, it has been been decided not to expand it, but rather to reduce to the maximum the <em>Codicologia</em> glossary. The reduction process has followed a simple criterion: unlike other vocabularies (like the TEI), <em>SegmOnto</em> focuses on the form rather than the content/meaning. For instance, it uses <code>GraphicZone</code>, without making the difference between an illustration (which carries a semantic load) and an ornamentation (which is purely decorative).</p>
 <p>Because of this reduction process, elements and definitions may differ:</p>
