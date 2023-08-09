@@ -1,12 +1,17 @@
 # The idea
 
-The intuition behind SegmOnto is the following: most of the documents containing texts have a stable layout over time:
-BNF, Fr. 412, f.10r.
-La Bruyère, Les Caractères, 1688, p. 128.
+The intuition behind SegmOnto is the following: most of the documents containing texts have a stable layout over time: <br/>
+<img src="../../assets/images/btv1b86070385_f140_orig.jpg" alt="La Bruyère, Les Caractères, 1688, p. 128." width="275"  style="float:right;"/> 
+
+<img src="../../assets/images/btv1b84259980_f29_orig.jpg" alt="BNF, Fr. 412, f.10r." width="300"/> 
+
 
 At a low level, it is possible not only to find similarities, but to use the same name in order to describe homogeneously large quantities of data. In blue we see the body in red the page number, in orange the running title, in green intermediary titles, in pink drop capitals, in grey additional notes.
-BNF, Fr. 412, f.10r.
-La Bruyère, Les Caractères, 1688, p. 128.
+
+<br/>
+<img src="../../assets/images/btv1b86070385_f140_ann.jpg" alt="La Bruyère, Les Caractères, 1688, p. 128." width="275"  style="float:right;"/> 
+
+<img src="../../assets/images/btv1b84259980_f29_ann.jpg" alt="BNF, Fr. 412, f.10r." width="300"/> 
 
 SegmOnto follows (with exceptions) two critera in its description of the page:
 
@@ -20,5 +25,5 @@ It uses a two-tier description, following the two classification tasks required 
 
 In order to cope with the complexity of documents, two safety devices are offered:
 
-- The main types of zones and lines are not open to any modification, but a Custom zone, which functions as a private zone, offers the possibility to encode additional features that would have been forgotten.
-- A system of subtypes (using the following syntax: Type:Subtype) has been added and offers only suggested values: it is possible to opt for personal subtypes, functioning at the level of a specific document only.
+- The main types of zones and lines are not open to any modification, but a [`CustomZone`](https://segmonto.github.io/gd/gdZ/CustomZone/) and a [`CustomLine`](https://segmonto.github.io/gd/gdL/CustomLine), which functions as private zonee, offer the possibility to encode additional features that would have been forgotten.
+- A [specific syntax](https://segmonto.github.io/gd/syntax), using a system of subtypes (using the following syntax: Type:Subtype) has been added and offers only suggested values: it is possible to opt for personal subtypes, functioning at the level of a specific document only.
